@@ -1,0 +1,124 @@
+h2{
+    margin: 0;
+    font-family: "AlphaCentauri" !important;
+}
+.main_container{
+    z-index: 50;
+    display: flex;
+    margin: 20px 40px;
+    color: white;
+    flex-wrap: wrap;
+    height: 80%;
+}
+.main_container > div{
+    padding: 20px 40px;
+}
+.left_side{
+    flex: 2;
+    display: inline;
+}
+.right_side{
+    flex: 1;
+    margin-top: 90px;
+    display: inline-flex;
+    flex-direction: column;
+    font-weight: 200;
+}
+#left_title{
+    flex: 1;
+    padding: 20px;
+    margin: 0 0 20px 0;
+    font-size: 2rem;
+}
+#left_title img{
+    height: 60px;
+    filter: invert(100%);
+    mix-blend-mode: screen;
+}
+
+.left_image{
+    flex: 1;
+    border-radius: 50px;
+    height: 80%;
+    opacity: 0.9;
+    border-left: 1px solid rgba(255,255,255,0.5);
+    border-top: 1px solid rgba(255,255,255,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+#Mt.Fuji_img{
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url('https://d3hne3c382ip58.cloudfront.net/files/upload…cmsfeatured/mt-fuji-trails-1565938941-785X440.jpg');
+}
+#ImperialTokyo_img{
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url('https://ak.jogurucdn.com/media/image/p25/place-2014-01-29-14-d49601a74ed92b721f48c523226fce84.jpg');
+}
+#HiroshimaPeace_img{
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url('https://www.atomicreporters.com/wp-content/uploads/2020/08/comm.png');
+}
+#HistoricKyoto_img{
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url('https://photos.smugmug.com/Asia/Kyoto-Japan/i-hxVHj3P/0/L/Kyoto-Japan-61-L.jpg');
+}
+
+@media (max-width: 1350px) {
+    .left_image{
+        border-radius: 50px;
+        height: 70%;
+    }
+    .right_side{
+        font-size: 0.9rem;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .main_container {
+        flex-direction: column;
+        max-width: 80%;
+        padding-left: 20px;
+      }
+    .left_image{
+        border-radius: 20px;
+        height: 70%;
+    }
+    .right_side{
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 900px) {
+    .main_container {
+      flex-direction: column;
+      max-width: 80%;
+      padding-left: 80px;
+    }
+    .left_image{
+        border-radius: 15px;
+        height: 70%;
+    }
+    .right_side{
+        overflow-y: scroll;
+        margin-top: 6px;
+    }
+  }
+@media (max-width: 600px){
+    .left_image{
+        border-radius: 15px;
+        height: 60%;
+    }
+    .right_side{
+        margin-top: -10px;
+    }
+}
+@media (max-width: 548px){
+    .left_image{
+        border-radius: 15px;
+        height: 50%;
+    }
+}

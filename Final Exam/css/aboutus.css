@@ -1,0 +1,68 @@
+body{
+    overflow: hidden;
+}
+#aboutus{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://www.hipsthetic.com/wp-content/uploads/2016/03/Mateusz-Urbanowicz-MINIMINI-Background-1024x576.jpg);
+    background-size: cover;
+}
+.aboutus_maincontain{
+    display: inline-flex;
+    width: 80%;
+    flex-direction: row;
+    margin: auto;
+    color: white;
+}
+.aboutus_left{
+    flex: 1;
+    padding: 50px;
+    background: linear-gradient(rgba(8, 8, 8, 0.5),rgba(56, 56, 56, 0.288));
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+.aboutus_right{
+    flex: 1;
+    padding-left: 50px;
+}
+h3{
+    font-family: "AlphaCentauri" !important;
+    color: white;
+}
+.socmeds button img{
+    height: 2.5rem;
+    width:2.5rem;
+    margin-right: 2%;
+    opacity: 2;
+    filter: invert(60%);
+    transition: 0.5s;
+}
+.scmeds button img:hover{
+    filter: invert(100%);
+    transform: translateY(2px);
+}
+
+  dd, p {
+      margin-left: 0;
+      padding: 1em 1em;
+      font-weight: 100;
+  }
+  @media (max-width:900px){
+    .aboutus_maincontain{
+        flex-direction: column;
+        font-size: 0.8em;
+        margin-left: 100;
+    }
+    .aboutus_right{
+        flex: 1;
+        padding-left: 5px;
+    }
+  }
+  @media (max-width: 1500px) {
+    .aboutus_left{
+        overflow-y: scroll;
+    }
+    .aboutus_maincontain{
+        flex-direction: column;
+        margin-left: 100;
+        top: 50;
+    }
+  }

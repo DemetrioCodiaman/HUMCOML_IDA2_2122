@@ -1,0 +1,6 @@
+#myVideo {
+    position: fixed;
+    height: 100vh;
+    filter: brightness(0.3);
+    object-fit: cover;
+}
